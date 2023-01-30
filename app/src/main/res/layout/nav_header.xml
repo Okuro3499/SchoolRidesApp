@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/backgroundColor"
+    android:orientation="vertical">
+
+    <!--    <de.hdodenhof.circleimageview.CircleImageView-->
+    <!--        android:id="@+id/profile_image"-->
+    <!--        android:layout_width="80dp"-->
+    <!--        android:layout_height="80dp"-->
+    <!--        android:layout_marginStart="8dp"-->
+    <!--        android:layout_marginTop="8dp"-->
+    <!--        app:civ_border_color="#C4C4C4"-->
+    <!--        app:civ_border_width="1dp"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+    <ImageView
+        android:id="@+id/profile_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/user"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/ltName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_image">
+
+        <TextView
+            android:id="@+id/titleName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:paddingTop="8dp"
+            android:text="Name:"
+            android:textColor="@color/md_black_1000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/profile_image" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="4dp"
+            android:paddingTop="8dp"
+            android:text="Gideon Okuro"
+            android:textColor="@color/md_black_1000"
+            android:textSize="20sp"
+            app:layout_constraintStart_toEndOf="@+id/titleName"
+            app:layout_constraintTop_toBottomOf="@+id/profile_image" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ltId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ltName">
+
+        <TextView
+            android:id="@+id/titleId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:paddingTop="8dp"
+            android:text="Id:"
+            android:textColor="@color/md_black_1000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/profile_image" />
+
+        <TextView
+            android:id="@+id/identity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="4dp"
+            android:paddingTop="8dp"
+            android:text="33450715"
+            android:textColor="@color/md_black_1000"
+            android:textSize="20sp"
+            app:layout_constraintStart_toEndOf="@+id/titleName"
+            app:layout_constraintTop_toBottomOf="@+id/profile_image" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/md_blue_grey_400"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ltId" />
+
+
+    <!--<com.google.android.material.switchmaterial.SwitchMaterial-->
+    <!--    android:id="@+id/switch2"-->
+    <!--    android:layout_width="wrap_content"-->
+    <!--    android:layout_below="@id/switch1"-->
+    <!--    android:text="Dark Theme"-->
+    <!--    android:layout_height="wrap_content"/>-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

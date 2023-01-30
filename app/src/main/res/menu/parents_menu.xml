@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <item
+        android:id="@+id/profile"
+        android:icon="@drawable/profile"
+        android:title="Parent/Guardian Profile" />
+
+    <item
+        android:id="@+id/childrenProfile"
+        android:icon="@drawable/child"
+        android:title="Child/Children Profile" />
+
+    <item
+        android:id="@+id/trips"
+        android:icon="@drawable/trips"
+        android:title="Trips" />
+
+    <item
+        android:id="@+id/map"
+        android:icon="@drawable/map"
+        android:title="Map" />
+
+    <item
+        android:id="@+id/logout"
+        android:title="Logout" />
+</menu>

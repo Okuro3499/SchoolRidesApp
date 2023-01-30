@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/obelixprobcyr"
+        android:text="Log In"
+        android:textColor="@color/md_white_1000"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toTopOf="@+id/edtPhoneNumber"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edtPhoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="15dp"
+        app:boxBackgroundColor="@color/md_white_1000"
+        app:boxStrokeColor="@color/md_white_1000"
+        app:boxStrokeWidth="0dp"
+        app:boxStrokeWidthFocused="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/edtPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <EditText
+            android:id="@+id/etPhoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:autofillHints=""
+            android:background="@drawable/custom_input"
+            android:drawablePadding="12dp"
+            android:hint="Phone Number"
+            android:inputType="phone"
+            android:paddingStart="10dp"
+            android:paddingEnd="8dp"
+            android:textColor="@color/md_black_1000" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edtPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        app:boxBackgroundColor="@color/md_white_1000"
+        app:boxStrokeColor="@color/md_white_1000"
+        app:boxStrokeWidth="0dp"
+        app:boxStrokeWidthFocused="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/btLogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:passwordToggleEnabled="true">
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:autofillHints=""
+            android:background="@drawable/custom_input"
+            android:drawablePadding="12dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:paddingStart="10dp"
+            android:paddingEnd="8dp"
+            android:textColor="@color/md_black_1000" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="Login"
+        android:background="@drawable/bg_button"
+        app:layout_constraintBottom_toTopOf="@+id/ltSignUp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/ltSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="200dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Don't have an account? "
+            android:textColor="@color/md_white_1000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign Up"
+            android:textColor="@color/buttonYellow"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
